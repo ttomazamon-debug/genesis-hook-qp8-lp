@@ -1,0 +1,1059 @@
+{
+  "direct_quote_block": 53108856,
+  "routes_not_block_pinned": true,
+  "routes": [
+    {
+      "provider": "kyber",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "428953259355033",
+      "quote_block": null,
+      "requested_at": 1793007095,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "pmm_8_0x4200000000000000000000000000000000000006_0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "exchange": "pmm-8/pancake-v3",
+            "tokenIn": "0x4200000000000000000000000000000000000006",
+            "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "amountOut": "999622"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "428953259355033",
+      "quote_block": "53108874",
+      "requested_at": 1793007096,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0x90333bb05c258fe0dddb2840ef66f1a05165aa7dac6815d24e807cc6ebd943a0",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "500",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountIn": "428953259355033",
+            "amountOut": "998998"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "428953259355033",
+      "quote_block": "53108875",
+      "requested_at": 1793007097,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "428953259355033"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xc58b1cb202c4650f52cbc51193783cb0c245419028bfe1bb00b786a9e0187372",
+            "hooks": "0x9d11f9505ca92f4b6983c1285d1ac0aaff7ec0c0",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountOut": "999238"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "2144766296775164",
+      "quote_block": null,
+      "requested_at": 1793007098,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "0x72ab388e2e2f6facef59e3c3fa2c4e29011c2d38",
+            "exchange": "pancake-v3",
+            "tokenIn": "0x4200000000000000000000000000000000000006",
+            "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "amountOut": "4999846"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "2144766296775164",
+      "quote_block": "53108876",
+      "requested_at": 1793007099,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "2144766296775164"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "500",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountOut": "4995870"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "2144766296775164",
+      "quote_block": "53108876",
+      "requested_at": 1793007099,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "2144766296775164"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xc58b1cb202c4650f52cbc51193783cb0c245419028bfe1bb00b786a9e0187372",
+            "hooks": "0x9d11f9505ca92f4b6983c1285d1ac0aaff7ec0c0",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountOut": "4995442"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "4289532593550328",
+      "quote_block": null,
+      "requested_at": 1793007101,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "kipseli-prop_0x4200000000000000000000000000000000000006_0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "exchange": "kipseli-prop",
+            "tokenIn": "0x4200000000000000000000000000000000000006",
+            "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "amountOut": "9989867"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "4289532593550328",
+      "quote_block": "53108877",
+      "requested_at": 1793007102,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "4289532593550328"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "500",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountOut": "9991720"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "4289532593550328",
+      "quote_block": "53108878",
+      "requested_at": 1793007103,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xd50542b2fdb0b365791a3cf9fc12fed718ecccba58c7be7a33f04855fcf99e7a",
+            "hooks": "0xa1dfe862f1111f5e9d466fd4d7297d7d4fa76888",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountIn": "4289532593550328",
+            "amountOut": "9995298"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "10723831483875820",
+      "quote_block": null,
+      "requested_at": 1793007105,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "0xc211e1f853a898bd1302385ccde55f33a8c4b3f3",
+            "exchange": "pancake-v3",
+            "tokenIn": "0x4200000000000000000000000000000000000006",
+            "tokenOut": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+            "amountOut": "31090"
+          },
+          {
+            "pool": "0x0ba69825c4c033e72309f6ac0bde0023b15cc97c",
+            "exchange": "hydrex-v4",
+            "tokenIn": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+            "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "amountOut": "25001052"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "10723831483875820",
+      "quote_block": "53108879",
+      "requested_at": 1793007106,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xd50542b2fdb0b365791a3cf9fc12fed718ecccba58c7be7a33f04855fcf99e7a",
+            "hooks": "0xa1dfe862f1111f5e9d466fd4d7297d7d4fa76888",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountIn": "10723831483875820",
+            "amountOut": "24991215"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "WETH_TO_USDC",
+      "input_raw": "10723831483875820",
+      "quote_block": "53108880",
+      "requested_at": 1793007107,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xd50542b2fdb0b365791a3cf9fc12fed718ecccba58c7be7a33f04855fcf99e7a",
+            "hooks": "0xa1dfe862f1111f5e9d466fd4d7297d7d4fa76888",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "amountIn": "10723831483875820",
+            "amountOut": "24991215"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "1000000",
+      "quote_block": null,
+      "requested_at": 1793007109,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "0xf6e81e5d16a7274d273905e0068f9f607b840c20bec23b2e442976ee03b29d91",
+            "exchange": "pancake-infinity-cl",
+            "tokenIn": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "tokenOut": "0x4200000000000000000000000000000000000006",
+            "amountOut": "429086843848312"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "1000000",
+      "quote_block": "53108881",
+      "requested_at": 1793007110,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0x1d8c55f347727c0fb4f5e1b65cdb93639e0c7102580a7d345e1144cd5a718f54",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "3000",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "1000000",
+            "amountOut": "428757722429877"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "1000000",
+      "quote_block": "53108882",
+      "requested_at": 1793007111,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xc58b1cb202c4650f52cbc51193783cb0c245419028bfe1bb00b786a9e0187372",
+            "hooks": "0x9d11f9505ca92f4b6983c1285d1ac0aaff7ec0c0",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "1000000"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountOut": "428904806870864"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "5000000",
+      "quote_block": null,
+      "requested_at": 1793007113,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "pmm_19_0x833589fcd6edb6e08f4c7c32d4f71b54bda02913_0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+            "exchange": "pmm-19/uniswap-v4",
+            "tokenIn": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "tokenOut": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+            "amountOut": "200365601572518016"
+          },
+          {
+            "pool": "0xc3382f7b8eeea78e01cc6f62d4d4ec37002843318885e64434e18441d9875a6e",
+            "exchange": "uniswap-v4",
+            "tokenIn": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+            "tokenOut": "0x4200000000000000000000000000000000000006",
+            "amountOut": "2145793883397653"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "5000000",
+      "quote_block": "53108883",
+      "requested_at": 1793007114,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xd1134d1fd75a1addfdd4c8ab1b29aced1efd961a0d4d25cbe931cb33630193cb",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "5009",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "5000000",
+            "amountOut": "2143595391590408"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "5000000",
+      "quote_block": "53108884",
+      "requested_at": 1793007116,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xc58b1cb202c4650f52cbc51193783cb0c245419028bfe1bb00b786a9e0187372",
+            "hooks": "0x9d11f9505ca92f4b6983c1285d1ac0aaff7ec0c0",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "5000000"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountOut": "2144202656949492"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "10000000",
+      "quote_block": null,
+      "requested_at": 1793007118,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "0x9d14ff91ae2c6e3d1a760542248b6c7f206894b0",
+            "exchange": "aerodrome-cl-3",
+            "tokenIn": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "tokenOut": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+            "amountOut": "12435"
+          },
+          {
+            "pool": "0x32b055229bfd88e72fb7a855ba394541a72b8a6f6d21300008d4384721189969",
+            "exchange": "uniswap-v4-fairflow",
+            "tokenIn": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+            "tokenOut": "0x4200000000000000000000000000000000000006",
+            "amountOut": "4287843623782411"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "10000000",
+      "quote_block": "53108886",
+      "requested_at": 1793007119,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "500",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "10000000"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountOut": "4287686417839780"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "10000000",
+      "quote_block": "53108886",
+      "requested_at": 1793007120,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xc58b1cb202c4650f52cbc51193783cb0c245419028bfe1bb00b786a9e0187372",
+            "hooks": "0x9d11f9505ca92f4b6983c1285d1ac0aaff7ec0c0",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "10000000"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountOut": "4287602141244462"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "kyber",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "25000000",
+      "quote_block": null,
+      "requested_at": 1793007121,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "pool": "kipseli-prop_0x4200000000000000000000000000000000000006_0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "exchange": "kipseli-prop",
+            "tokenIn": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+            "tokenOut": "0x4200000000000000000000000000000000000006",
+            "amountOut": "10724078316848954"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_inclusive",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "25000000",
+      "quote_block": "53108887",
+      "requested_at": 1793007122,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a",
+            "hooks": "0x0000000000000000000000000000000000000000",
+            "fee": "500",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "25000000"
+          },
+          {
+            "type": "v4-pool",
+            "address": "0xbb2aefc6c55a0464b944c0478869527ba1a537f05f90a1bb82e1196c6e9403e2",
+            "hooks": "0xb08211d57032dd10b1974d4b876851a7f7596888",
+            "fee": "0",
+            "tokenIn": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountOut": "10719148604685383"
+          }
+        ]
+      ]
+    },
+    {
+      "provider": "uniswap_hooks_only",
+      "direction": "USDC_TO_WETH",
+      "input_raw": "25000000",
+      "quote_block": "53108888",
+      "requested_at": 1793007123,
+      "status": "response_received",
+      "genesis_in_returned_route": false,
+      "simulation_failure": null,
+      "selected_paths": [
+        [
+          {
+            "type": "v4-pool",
+            "address": "0xd50542b2fdb0b365791a3cf9fc12fed718ecccba58c7be7a33f04855fcf99e7a",
+            "hooks": "0xa1dfe862f1111f5e9d466fd4d7297d7d4fa76888",
+            "fee": "8388608",
+            "tokenIn": {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "chainId": 8453,
+              "symbol": "USDC",
+              "decimals": "6"
+            },
+            "tokenOut": {
+              "address": "0x4200000000000000000000000000000000000006",
+              "chainId": 8453,
+              "symbol": "WETH",
+              "decimals": "18"
+            },
+            "amountIn": "25000000",
+            "amountOut": "10721724204245586"
+          }
+        ]
+      ]
+    }
+  ],
+  "direct_quotes": [
+    {
+      "direction": "WETH_TO_USDC",
+      "zero_for_one": true,
+      "usdc_equivalent_raw": "100000",
+      "input_raw": "42895325935504",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "99855",
+      "quoter_gas_estimate": "390543",
+      "vanilla_v3_output_raw": "99949",
+      "gross_edge_vs_v3_bps": -9.404796446187556
+    },
+    {
+      "direction": "WETH_TO_USDC",
+      "zero_for_one": true,
+      "usdc_equivalent_raw": "1000000",
+      "input_raw": "428953259355033",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "998488",
+      "quoter_gas_estimate": "393343",
+      "vanilla_v3_output_raw": "999499",
+      "gross_edge_vs_v3_bps": -10.115067648892095
+    },
+    {
+      "direction": "WETH_TO_USDC",
+      "zero_for_one": true,
+      "usdc_equivalent_raw": "5000000",
+      "input_raw": "2144766296775164",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "4990921",
+      "quoter_gas_estimate": "393415",
+      "vanilla_v3_output_raw": "4997499",
+      "gross_edge_vs_v3_bps": -13.162583924479025
+    },
+    {
+      "direction": "WETH_TO_USDC",
+      "zero_for_one": true,
+      "usdc_equivalent_raw": "10000000",
+      "input_raw": "4289532593550328",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "9978042",
+      "quoter_gas_estimate": "395467",
+      "vanilla_v3_output_raw": "9994997",
+      "gross_edge_vs_v3_bps": -16.96348683246228
+    },
+    {
+      "direction": "WETH_TO_USDC",
+      "zero_for_one": true,
+      "usdc_equivalent_raw": "25000000",
+      "input_raw": "10723831483875820",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "24916648",
+      "quoter_gas_estimate": "395531",
+      "vanilla_v3_output_raw": "24987485",
+      "gross_edge_vs_v3_bps": -28.348991505147477
+    },
+    {
+      "direction": "WETH_TO_USDC",
+      "zero_for_one": true,
+      "usdc_equivalent_raw": "50000000",
+      "input_raw": "21447662967751639",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "49738724",
+      "quoter_gas_estimate": "395467",
+      "vanilla_v3_output_raw": "49974941",
+      "gross_edge_vs_v3_bps": -47.26708931982531
+    },
+    {
+      "direction": "USDC_TO_WETH",
+      "zero_for_one": false,
+      "usdc_equivalent_raw": "100000",
+      "input_raw": "100000",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "42909420624774",
+      "quoter_gas_estimate": "406729",
+      "vanilla_v3_output_raw": "42873878171690",
+      "gross_edge_vs_v3_bps": 8.29000188452021
+    },
+    {
+      "direction": "USDC_TO_WETH",
+      "zero_for_one": false,
+      "usdc_equivalent_raw": "1000000",
+      "input_raw": "1000000",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "429064754919714",
+      "quoter_gas_estimate": "409529",
+      "vanilla_v3_output_raw": "428738772640831",
+      "gross_edge_vs_v3_bps": 7.603284323344519
+    },
+    {
+      "direction": "USDC_TO_WETH",
+      "zero_for_one": false,
+      "usdc_equivalent_raw": "5000000",
+      "input_raw": "5000000",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "2144669545135029",
+      "quoter_gas_estimate": "409721",
+      "vanilla_v3_output_raw": "2143693661513714",
+      "gross_edge_vs_v3_bps": 4.552346442195966
+    },
+    {
+      "direction": "USDC_TO_WETH",
+      "zero_for_one": false,
+      "usdc_equivalent_raw": "10000000",
+      "input_raw": "10000000",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "4287704638434256",
+      "quoter_gas_estimate": "409665",
+      "vanilla_v3_output_raw": "4287386818801422",
+      "gross_edge_vs_v3_bps": 0.7412898491926823
+    },
+    {
+      "direction": "USDC_TO_WETH",
+      "zero_for_one": false,
+      "usdc_equivalent_raw": "25000000",
+      "input_raw": "25000000",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "10707021870209383",
+      "quoter_gas_estimate": "407999",
+      "vanilla_v3_output_raw": "10718463265310291",
+      "gross_edge_vs_v3_bps": -10.67447339950069
+    },
+    {
+      "direction": "USDC_TO_WETH",
+      "zero_for_one": false,
+      "usdc_equivalent_raw": "50000000",
+      "input_raw": "50000000",
+      "block": 53108856,
+      "hook_data": "0x",
+      "status": "valid",
+      "output_raw": "21373369074131396",
+      "quoter_gas_estimate": "409665",
+      "vanilla_v3_output_raw": "21436913924988227",
+      "gross_edge_vs_v3_bps": -29.64272333190604
+    }
+  ]
+}

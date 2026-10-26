@@ -1,0 +1,4 @@
+* text=auto
+*.sol -text
+compiler-inputs/*.json -text
+artifacts/*.json -text

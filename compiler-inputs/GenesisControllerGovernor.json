@@ -1,0 +1,49 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "src/governance/GenesisControllerGovernor.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.24;\n\ninterface IRewardsControllerSettable {\n    function setRewardsController(address next) external;\n}\n\n/// @title GenesisControllerGovernor\n/// @notice The 48-hour timelock for rewards-controller replacement, moved OUT of\n///         GenesisHookV5 (Phase 3B size optimization, Option A).\n///\n/// The hook holds `immutable controllerGovernor == address(this)` and accepts\n/// setRewardsController() from this contract ONLY. The delay therefore lives\n/// here rather than being duplicated in the hook's bytecode.\n///\n/// \u2500\u2500 SECURITY PROPERTIES PRESERVED FROM THE HOOK-NATIVE TIMELOCK \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n///  \u2022 no instant operator replacement \u2014 every change waits DELAY\n///  \u2022 anti-V6: the controller remains replaceable, so a controller bug never\n///    forces a hook redeploy\n///  \u2022 zero-address unbind is explicit and still timelocked\n///  \u2022 no generic arbitrary-call logic: this contract can call exactly one\n///    function on exactly one target, both fixed at construction\n///\n/// Owner should be the Safe (0xF84D2025cE5fBe87Ff78951383befE5693169e23).\ncontract GenesisControllerGovernor {\n    uint256 public constant DELAY = 48 hours;\n\n    address public immutable hook;\n    address public owner;\n\n    address public pendingController;\n    uint256 public eta;\n    bool public scheduled; // distinguishes \"scheduled to address(0)\" from \"nothing scheduled\"\n\n    event ControllerChangeScheduled(address indexed controller, uint256 eta);\n    event ControllerChangeExecuted(address indexed controller);\n    event ControllerChangeCancelled(address indexed controller);\n    event OwnerTransferred(address indexed oldOwner, address indexed newOwner);\n\n    error Unauthorized();\n    error NothingScheduled();\n    error AlreadyScheduled();\n    error NotReady();\n    error ZeroAddress();\n\n    modifier onlyOwner() {\n        if (msg.sender != owner) revert Unauthorized();\n        _;\n    }\n\n    constructor(address _hook, address _owner) {\n        if (_hook == address(0) || _owner == address(0)) revert ZeroAddress();\n        hook = _hook;\n        owner = _owner;\n    }\n\n    /// @notice Schedule a controller change. `next == address(0)` is the explicit\n    ///         unbind path (rewards permanently off until re-bound via a new schedule).\n    function schedule(address next) external onlyOwner {\n        if (scheduled) revert AlreadyScheduled();\n        pendingController = next;\n        eta = block.timestamp + DELAY;\n        scheduled = true;\n        emit ControllerChangeScheduled(next, eta);\n    }\n\n    function cancel() external onlyOwner {\n        if (!scheduled) revert NothingScheduled();\n        address cancelled = pendingController;\n        pendingController = address(0);\n        eta = 0;\n        scheduled = false;\n        emit ControllerChangeCancelled(cancelled);\n    }\n\n    function execute() external onlyOwner {\n        if (!scheduled) revert NothingScheduled();\n        if (block.timestamp < eta) revert NotReady();\n\n        address next = pendingController;\n        pendingController = address(0);\n        eta = 0;\n        scheduled = false;\n\n        IRewardsControllerSettable(hook).setRewardsController(next);\n        emit ControllerChangeExecuted(next);\n    }\n\n    function transferOwner(address newOwner) external onlyOwner {\n        if (newOwner == address(0)) revert ZeroAddress();\n        emit OwnerTransferred(owner, newOwner);\n        owner = newOwner;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "evmVersion": "cancun",
+    "libraries": {
+      "src/libraries/AmpLib.sol": {
+        "AmpLib": "0x007dd8272788dd705e0bb4746df23806eb8f4f69"
+      },
+      "src/libraries/GenesisDistLib.sol": {
+        "GenesisDistLib": "0xbfe72deb3902f871a1a46384f5e66c184aceeff7"
+      }
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@ensdomains/=lib/v4-core/node_modules/@ensdomains/",
+      ":@openzeppelin/=lib/v4-core/lib/openzeppelin-contracts/",
+      ":@uniswap/v4-core/=lib/v4-core/",
+      ":ds-test/=lib/v4-core/lib/forge-std/lib/ds-test/src/",
+      ":erc4626-tests/=lib/v4-core/lib/openzeppelin-contracts/lib/erc4626-tests/",
+      ":forge-std/=lib/forge-std/src/",
+      ":hardhat/=lib/v4-core/node_modules/hardhat/",
+      ":openzeppelin-contracts/=lib/v4-core/lib/openzeppelin-contracts/",
+      ":solmate/=lib/v4-core/lib/solmate/",
+      ":v4-core/=lib/v4-core/src/"
+    ],
+    "viaIR": true,
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "metadata",
+          "evm.bytecode",
+          "evm.deployedBytecode"
+        ]
+      }
+    }
+  }
+}

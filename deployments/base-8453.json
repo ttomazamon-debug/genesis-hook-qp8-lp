@@ -1,0 +1,89 @@
+{
+  "release": "qp8-lp-b958a867",
+  "chain_id": 8453,
+  "hook": "0xd6155ce86ff3a33f52493e08cf77d7bbdf21fffc",
+  "pool_id": "0xa409963d0e77a8f60d8d83caa7d3cd5b831d6e318ec3880b34ec3fff5a109cfe",
+  "deployment_block": 52945855,
+  "hook_runtime_bytes": 24214,
+  "contracts": [
+    {
+      "name": "AmpLib",
+      "address": "0x007dd8272788dd705e0bb4746df23806eb8f4f69",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0x007dd8272788dd705e0bb4746df23806eb8f4f69#code"
+    },
+    {
+      "name": "GenesisDistLib",
+      "address": "0xbfe72deb3902f871a1a46384f5e66c184aceeff7",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0xbfe72deb3902f871a1a46384f5e66c184aceeff7#code"
+    },
+    {
+      "name": "GenesisControllerGovernor",
+      "address": "0x4ea83b22845eb4a1961b4cb6bebc13f230e84772",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0x4ea83b22845eb4a1961b4cb6bebc13f230e84772#code"
+    },
+    {
+      "name": "GenesisHookV5",
+      "address": "0xd6155ce86ff3a33f52493e08cf77d7bbdf21fffc",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0xd6155ce86ff3a33f52493e08cf77d7bbdf21fffc#code"
+    },
+    {
+      "name": "GenesisVaultV2",
+      "address": "0x73945fc73817087fc58e6e6f80f04f18c5604158",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0x73945fc73817087fc58e6e6f80f04f18c5604158#code"
+    },
+    {
+      "name": "GenesisRewardsController",
+      "address": "0x3c82568d97c60fc0f771d9d13f33d6d07a381600",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0x3c82568d97c60fc0f771d9d13f33d6d07a381600#code"
+    },
+    {
+      "name": "ReviewLedgerFactory",
+      "address": "0xfdface7d4184802ba525c4ffcc502c249e680def",
+      "status": "Sourcify exact_match (creation and runtime); Basescan not verified in the reviewed evidence",
+      "url": "https://repo.sourcify.dev/8453/0xfdface7d4184802ba525c4ffcc502c249e680def"
+    },
+    {
+      "name": "PosmTraceAdapter",
+      "address": "0xb7633630857e862ba81aa27decabcc7679aba7e4",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0xb7633630857e862ba81aa27decabcc7679aba7e4#code"
+    },
+    {
+      "name": "GenesisLpClaimsPrototype",
+      "address": "0xffe2fe138a4a4ed68c9620eaaa783c681374c096",
+      "status": "Etherscan/Base verified; published sources match reviewed input",
+      "url": "https://basescan.org/address/0xffe2fe138a4a4ed68c9620eaaa783c681374c096#code"
+    },
+    {
+      "name": "GenesisV52Oracle",
+      "address": "0x1d609949f0e79cfd7cb3dd11984be5b59634b684",
+      "status": "Sourcify match (creation and runtime); original metadata unresolved; not exact_match",
+      "url": "https://repo.sourcify.dev/8453/0x1d609949f0e79cfd7cb3dd11984be5b59634b684"
+    },
+    {
+      "name": "GenesisClaimVault",
+      "address": "0x27a8f72140f9d62bd7bcfe4afb20e76b6fbd4f41",
+      "status": "Etherscan/Base verified; exact creation proof with original constructor and immutable hook",
+      "url": "https://basescan.org/address/0x27a8f72140f9d62bd7bcfe4afb20e76b6fbd4f41#code"
+    }
+  ],
+  "state_observation": {
+    "block": 53111764,
+    "rewards_enabled": false,
+    "hook_rewards_controller": "0x0000000000000000000000000000000000000000",
+    "controller_split_bps": [
+      4000,
+      2500,
+      2000,
+      1000,
+      500
+    ],
+    "note": "Historical read-only observation on 26 October 2026; configuration can change. No activation is performed by this repository."
+  }
+}

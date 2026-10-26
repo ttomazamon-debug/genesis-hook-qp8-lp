@@ -1,0 +1,28 @@
+# Secrets are excluded even from private operations repositories.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+keystores/
+wallets/
+secrets/
+credentials/
+# Runtime and signing artifacts
+out/
+cache/
+broadcast/
+logs/
+*.log
+*.sqlite*
+*.db
+*.db-*
+backups/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+# Local compiler output
+*-output.json
