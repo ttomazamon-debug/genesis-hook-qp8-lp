@@ -15,3 +15,18 @@ Historical addresses are not hidden, rewritten or silently replaced in old
 records. Old test totals, APY figures, organic-traffic labels and routing
 claims do not establish those properties for the new hook. Retired credentials
 are never a usable historical dependency.
+
+## Operational milestones for the same QP8 LP source release
+
+- 26 October 2026, block 53122259: Safe enabled economics after binding the
+  controller and executing the 40/35/20/0/5 split update.
+- Block 53123091: the first separately receipt-verified positive realization
+  documented in the follow-up evidence.
+- 30 October 2026, block 53286650: NFT 3162691 fully exited.
+- 30 October 2026, block 53300954: NFT 3182122 minted with range
+  [-199900, -198500), still 1400 ticks wide.
+- 1 November 2026: documentation and bounded rewards-on/routing observations
+  updated. This is a documentation revision, not a new deployment or source patch.
+
+Earlier rewards-off observations remain historical evidence and are not
+silently rewritten as rewards-on tests.

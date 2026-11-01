@@ -1,0 +1,26 @@
+{
+  "chain_id": 8453,
+  "block": 53123091,
+  "block_hash": "0x14d7b9e393a122a00ea80448e4bcb206bfea04f4c8cf0552c2bce6f724d4a5aa",
+  "transaction": "0x527b754342ff090b71728846bee68bd5d8bf00c37e9851095b5e95df25140792",
+  "receipt_status": 1,
+  "canonical_block_hash_verified": true,
+  "controller": "0x3c82568d97c60fc0f771d9d13f33d6d07a381600",
+  "pool_id": "0xa409963d0e77a8f60d8d83caa7d3cd5b831d6e318ec3880b34ec3fff5a109cfe",
+  "event": "EconomicsRealized",
+  "currency": "USDC",
+  "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+  "token_decimals": 6,
+  "raw_amounts": {
+    "gross": 8,
+    "trader": 3,
+    "lp": 2,
+    "protocol": 1,
+    "router": 0,
+    "keeper": 0,
+    "rounding_dust": 2,
+    "capped_trader_remainder": 0
+  },
+  "sum_matches_gross": true,
+  "note": "A single positive event proves occurrence, not profitability, guaranteed future issuance, or immediate per-position claimability of the entire funded LP share."
+}

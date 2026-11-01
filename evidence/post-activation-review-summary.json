@@ -1,0 +1,58 @@
+{
+  "documentation_date": "2026-11-01",
+  "source_release": "qp8-lp-b958a867",
+  "engineering_evidence_not_independent_audit": true,
+  "deployment_observation": "evidence/state-2026-11-01.json",
+  "realization_observation": "evidence/first-realization-2026-10-26.json",
+  "quote_observation": {
+    "block": 53365964,
+    "matched_pairs": 24,
+    "pairs_per_benchmark": 12,
+    "nominal_usdc_sizes": [
+      0.1,
+      1,
+      5,
+      10,
+      25,
+      50
+    ],
+    "directions": [
+      "WETH_TO_USDC",
+      "USDC_TO_WETH"
+    ],
+    "genesis_gross_output_wins": 0,
+    "gas_adjusted_routing_market_share_not_measured": true,
+    "raw_data": "evidence/quotes-2026-11-01.csv",
+    "pancake_leg_uses_native_callback_gas_not_comparable": true
+  },
+  "traffic_sample": {
+    "sampled_transactions": 8,
+    "selection": "bounded first/middle/last samples from specified pre/post position-move windows; duplicates removed",
+    "uniswap_v3_cycle_samples": 4,
+    "pancake_v3_cycle_samples": 3,
+    "three_v4_pool_cycle_samples": 1,
+    "does_not_identify_owner_or_establish_organic_users": true
+  },
+  "bounded_followup_checks": {
+    "rewards_on_infrastructure_integration_tests_passed": 15,
+    "test_pair_decimals": [
+      18,
+      18
+    ],
+    "test_tick_spacing": 10,
+    "uses_fresh_test_genesis_deployment": true,
+    "uses_deployed_native_infrastructure_on_fork": true,
+    "production_pair_decimals": [
+      18,
+      6
+    ],
+    "production_tick_spacing": 100,
+    "full_fill_production_prepay_controls": 2,
+    "measured_additional_invocation_gas": [
+      985,
+      985
+    ],
+    "covers_every_route_token_or_security_state": false
+  },
+  "private_operational_or_unpublished_security_reports_included": false
+}

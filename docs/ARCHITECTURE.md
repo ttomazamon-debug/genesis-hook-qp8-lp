@@ -53,3 +53,18 @@ amounts; no contract-level minimum claim amount is imposed. This differs from
 legacy epoch donations, so a zero legacy donation counter is not proof that the
 new claim architecture is absent or broken. Rounding reserves and capped
 remainders must not be marketed as automatically realized income.
+
+## Post-activation observations
+
+Economics was enabled at block 53122259 with the controller bound to this hook.
+The observed split is 40/35/20/0/5; see [dated state](STATUS.md). Ordinary native
+LP fees, the operator fee and position-indexed realized-economics rewards are
+separate accounting streams. An enabled flag does not imply every swap will
+realize or distribute economics, or that any return is profitable after costs.
+
+The LP ledger authorizes its bound adapter to record traces. It does not
+independently prove that the supplied list contains every initialized crossed
+tick. Native-path tests provide bounded evidence, not an independent guarantee
+of trace completeness in every possible state. Oracle, custody and settlement
+dependencies can affect availability. Successful rollback/rejection tests do
+not establish unconditional execution or a comprehensive security audit.

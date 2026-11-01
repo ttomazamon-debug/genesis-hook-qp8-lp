@@ -1,0 +1,109 @@
+{
+  "chain_id": 8453,
+  "block": 53367892,
+  "block_hash": "0x4ae47bfee800dcca22153ffe8389edcf9fd5cfebd0d127aac90cb8a6fd0b286d",
+  "timestamp_utc": "2026-11-01T09:25:31+00:00",
+  "hook": "0xd6155ce86ff3a33f52493e08cf77d7bbdf21fffc",
+  "pool_id": "0xa409963d0e77a8f60d8d83caa7d3cd5b831d6e318ec3880b34ec3fff5a109cfe",
+  "rewards_enabled": true,
+  "paused": false,
+  "hook_rewards_controller": "0x3c82568d97c60fc0f771d9d13f33d6d07a381600",
+  "controller_split_bps": {
+    "trader": 4000,
+    "lp": 3500,
+    "protocol": 2000,
+    "router": 0,
+    "keeper": 500
+  },
+  "operator_fee_pips": 50,
+  "ledger": "0xffe2fe138a4a4ed68c9620eaaa783c681374c096",
+  "adapter": "0xb7633630857e862ba81aa27decabcc7679aba7e4",
+  "bindings_verified": [
+    "hook -> controller",
+    "controller -> hook",
+    "vault -> controller",
+    "hook/controller -> adapter",
+    "adapter -> hook/controller/ledger",
+    "ledger authority -> adapter"
+  ],
+  "pool_tick": -199034,
+  "active_liquidity_raw": "268318444327370",
+  "ledger_tick_matches_core": true,
+  "ledger_liquidity_matches_core": true,
+  "ledger_nonce_matches_adapter": true,
+  "diagnostics_enabled": false,
+  "oracle_age_blocks": 18,
+  "oracle_staleness_limit_blocks": 60,
+  "tracked_position": {
+    "token_id": 3182122,
+    "tick_lower": -199900,
+    "tick_upper_exclusive": -198500,
+    "width_ticks": 1400,
+    "liquidity_raw": "268318444327370"
+  },
+  "previous_position": {
+    "token_id": 3162691,
+    "liquidity_raw": "0"
+  },
+  "runtime_checks": [
+    {
+      "name": "AmpLib",
+      "address": "0x007dd8272788dd705e0bb4746df23806eb8f4f69",
+      "runtime_sha256": "c4b07d21bbac68a65385a90787b8fd92c82b9c8f545deb0ce35999dc9f77cfe5",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "GenesisDistLib",
+      "address": "0xbfe72deb3902f871a1a46384f5e66c184aceeff7",
+      "runtime_sha256": "e699741528cc7c830e08d13920723741819d9995fa449a16cc441a5242ee153d",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "GenesisControllerGovernor",
+      "address": "0x4ea83b22845eb4a1961b4cb6bebc13f230e84772",
+      "runtime_sha256": "c518ca3a7813187b63deeb978a24dc6dcec43d01f8e6260403ba930834066528",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "GenesisHookV5",
+      "address": "0xd6155ce86ff3a33f52493e08cf77d7bbdf21fffc",
+      "runtime_sha256": "ae83520fa6f6c9b9c05ccb4502964e143afcf5b0784111bf72172ef051a237de",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "GenesisVaultV2",
+      "address": "0x73945fc73817087fc58e6e6f80f04f18c5604158",
+      "runtime_sha256": "51e7015aec147133194bc90f1b04606c7c98bdaba7c638bd9a8deefbed7f4407",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "GenesisRewardsController",
+      "address": "0x3c82568d97c60fc0f771d9d13f33d6d07a381600",
+      "runtime_sha256": "b12283c6cb92889dd5d12995e1620eaf8096517cd38651e83b7c0178f5a97f44",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "ReviewLedgerFactory",
+      "address": "0xfdface7d4184802ba525c4ffcc502c249e680def",
+      "runtime_sha256": "bb3d48b1387c5589577f94b02b7c33804e6d42a83a9ea67a0e5d00ff90e38229",
+      "matches_deployment_reference": true
+    },
+    {
+      "name": "PosmTraceAdapter",
+      "address": "0xb7633630857e862ba81aa27decabcc7679aba7e4",
+      "runtime_sha256": "3c96b8853bcdbf718e689b8516a3d5f693d7760c9b10e2ed091f43c84e1fd34f",
+      "matches_deployment_reference": true
+    }
+  ],
+  "activation": {
+    "block": 53122259,
+    "block_hash": "0xb740cd972b0b6037d91929d6139769f8cd4c5bb9a7d8e299ec6ab773624ca34f",
+    "transaction": "0xc3c846e6a4789b77dacba7b597f71008ad4579783010607c8b67cccc86701cc7",
+    "timestamp_utc": "2026-10-26T16:57:45+00:00",
+    "receipt_status": 1,
+    "canonical_block_hash_verified": true,
+    "safe_execution_success_observed": true,
+    "rewards_enabled_event_observed": true
+  },
+  "note": "Dated read-only observation. Configuration and liquidity may change. This does not constitute an audit or a live service."
+}

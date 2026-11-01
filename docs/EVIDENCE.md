@@ -4,7 +4,7 @@ The current hook is `0xd6155ce86ff3a33f52493e08cf77d7bbdf21fffc`.
 Older C3 addresses, 24548-byte runtimes and historical dashboard counts must not
 be substituted for this deployment. This is a routing dossier, not a security audit.
 
-## Tested execution
+## Historical pre-activation execution
 
 Eight exact-input swaps on a disposable Base fork passed the measured wallet,
 Quoter and settlement checks. Both directions were tested with empty hookData.
@@ -19,8 +19,10 @@ exact-output control used incorrect opcode 0x07; a separate two-direction check
 using opcode 0x08 passed with the expected hook selector 0xbcd02cf4. This explains
 the original aggregate INCOMPLETE flags without relabelling the raw report.
 
-These tests used synthetic fork funding. They do not prove active-rewards positive
-realization, all partial-fill/tick-crossing cases, or execution via every router.
+These original tests used synthetic fork funding and rewards-off state. They do
+not prove active-rewards positive realization or every router/partial-fill path.
+The subsequent activation, positive realization and separately scoped
+rewards-on checks are recorded in [post-activation evidence](POST_ACTIVATION_EVIDENCE.md).
 
 ## Quotes and competition
 
@@ -49,8 +51,10 @@ none selected Genesis. Non-selection does not establish lack of support.
 
 The bounded window was 52971982–53071982: 185 Swap events, no missing queried
 ranges. Sixteen sampled transaction receipts contained the pool event. Fourteen
-shared tx.to/pool sender 0x563203867b12cf2405f415042db11f6fa9fb937b. Its strategy
-and organic status are not established. Two available traces included Kyber's
+shared tx.to/pool sender 0x563203867b12cf2405f415042db11f6fa9fb937b.
+This historical window alone did not establish its strategy or organic status.
+A later eight-transaction sample found arbitrage cycles; see the separately dated
+[follow-up](POST_ACTIVATION_EVIDENCE.md#traffic-and-competition). Two available traces included Kyber's
 router 0x6131b5fae19ea4f9d964eac0408e4408b66337b5 as ancestor of PoolManager:
 
 - 0xe4cdbb6489c52339e695a7a3e33cbad1c937a3dfc98359d5eb957bc0a8487867
@@ -67,14 +71,15 @@ not mean a later quote must select the pool or prove Uniswap Labs eligibility.
   controller unbound, unpaused, oracle age 12 versus limit 60 and nonzero pool
   liquidity. All twelve refreshed quotes were positive; two gross outputs exceeded
   the sampled V3 comparator (USDC to WETH, nominal 0.1 and 1 USDC). No later
-  activation is assumed. Contact details are intentionally omitted from this public source export.
+  activation is inferred from this historical matrix. Later activation is separately
+  receipt-verified in [dated state](STATUS.md). Contact details remain omitted.
 - Factory remains unverified on Basescan in available evidence; independent
   Sourcify exact_match is linked. Do not explain its earlier mismatch error as
   caused by a later shared forwarding quota limit.
 - OracleReader metadata fingerprint remains unresolved. Sourcify match proves
   executable correspondence; it is not exact original-source metadata recovery.
-- Document any future rewards activation and test materially changed execution
-  before representing those paths as demonstrated.
+- Rewards activation is now documented separately. Keep subsequent configuration
+  changes and their evidence dated; do not retroactively relabel this original matrix.
 - Eligibility is a discretionary Uniswap review, not an application outcome
   established by these tests. No guaranteed processing time or traffic increase.
 

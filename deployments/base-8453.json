@@ -74,16 +74,53 @@
     }
   ],
   "state_observation": {
-    "block": 53111764,
-    "rewards_enabled": false,
-    "hook_rewards_controller": "0x0000000000000000000000000000000000000000",
+    "block": 53367892,
+    "rewards_enabled": true,
+    "paused": false,
+    "hook_rewards_controller": "0x3c82568d97c60fc0f771d9d13f33d6d07a381600",
+    "operator_fee_pips": 50,
+    "oracle_age_blocks": 18,
     "controller_split_bps": [
       4000,
-      2500,
+      3500,
       2000,
-      1000,
+      0,
       500
     ],
-    "note": "Historical read-only observation on 26 October 2026; configuration can change. No activation is performed by this repository."
+    "evidence": "evidence/state-2026-11-01.json",
+    "note": "Dated observation; configuration may change. No activation is performed by this repository."
+  },
+  "documentation_revision": "2026-11-01",
+  "historical_state_observations": [
+    {
+      "block": 53111764,
+      "rewards_enabled": false,
+      "hook_rewards_controller": "0x0000000000000000000000000000000000000000",
+      "controller_split_bps": [
+        4000,
+        2500,
+        2000,
+        1000,
+        500
+      ],
+      "note": "Historical read-only observation on 26 October 2026; configuration can change. No activation is performed by this repository."
+    }
+  ],
+  "economics_activation": {
+    "block": 53122259,
+    "block_hash": "0xb740cd972b0b6037d91929d6139769f8cd4c5bb9a7d8e299ec6ab773624ca34f",
+    "transaction": "0xc3c846e6a4789b77dacba7b597f71008ad4579783010607c8b67cccc86701cc7",
+    "timestamp_utc": "2026-10-26T16:57:45+00:00",
+    "receipt_status": 1,
+    "canonical_block_hash_verified": true,
+    "safe_execution_success_observed": true,
+    "rewards_enabled_event_observed": true
+  },
+  "tracked_lp_position": {
+    "token_id": 3182122,
+    "tick_lower": -199900,
+    "tick_upper_exclusive": -198500,
+    "width_ticks": 1400,
+    "liquidity_raw": "268318444327370"
   }
 }

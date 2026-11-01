@@ -30,11 +30,19 @@ minimum claim amount. Production names including `GenesisLpClaimsPrototype` and
 `ReviewLedgerFactory` are preserved because changing names or source would break
 the identity of the reviewed release; their names do not imply an audit.
 
-At the last full routing-state observation, block **53111764** on 26 October
-2026, the hook was unpaused, rewards disabled and the hook's controller unbound.
-These are dated observations, not a live status endpoint. Rewards-enabled
-realization is not proven by that rewards-off routing matrix. Read deployed
-state again before operational decisions.
+Economics was activated through Safe on **26 October 2026**, block **53122259**.
+Subsequent observations confirm the bound controller, rewards enabled and a
+**40 / 35 / 20 / 0 / 5** trader / LP / protocol / router / keeper split of realized
+economics. These percentages do not replace the native pool LP fee or the
+separate **50-pips (0.005%)** operator fee.
+
+The tracked native LP position is **NFT 3182122**, range **[-199900, -198500)**.
+The earlier NFT 3162691 was fully exited; the recentered range retains its
+1400-tick width. The hook, pool ID and frozen deployed sources are unchanged.
+See [dated deployment state](docs/STATUS.md),
+[post-activation evidence](docs/POST_ACTIVATION_EVIDENCE.md) and the public
+[state snapshot](evidence/state-2026-11-01.json). These are historical
+observations, not a live status endpoint or a security audit.
 
 A Uniswap Labs routing review application was successfully submitted on
 26 October 2026. **Submission is not approval, an audit or an endorsement.**
@@ -63,6 +71,9 @@ metadata. See the [verification matrix](docs/VERIFICATION.md) and
 
 ## Documentation
 
+- [Dated deployment state](docs/STATUS.md)
+- [Post-activation accounting, routing and test evidence](docs/POST_ACTIVATION_EVIDENCE.md)
+- [Documentation changes](CHANGELOG.md)
 - [Architecture and trust boundaries](docs/ARCHITECTURE.md)
 - [Routing evidence and its limits](docs/EVIDENCE.md)
 - [Security reporting](SECURITY.md)
